@@ -1,0 +1,49 @@
+{
+  "name": "terminal-pro-suite",
+  "version": "1.0.0",
+  "description": "Advanced Terminal Suite s Framer, Figma, Canva Pro a Claude Code integrací",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/cli.js",
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "type-check": "tsc --noEmit",
+    "setup": "node scripts/setup.js",
+    "design:sync": "node scripts/design-sync.js"
+  },
+  "keywords": [
+    "terminal",
+    "cli",
+    "framer",
+    "figma",
+    "canva",
+    "claude",
+    "design"
+  ],
+  "author": "jakub1duch-a11y",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.12",
+    "axios": "^1.6.5",
+    "dotenv": "^16.3.1",
+    "commander": "^11.1.0",
+    "ora": "^8.0.1",
+    "table": "^6.8.1",
+    "node-fetch": "^3.3.2",
+    "figma-api": "^1.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11",
+    "ts-jest": "^29.1.1",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0"
+  }
+}
